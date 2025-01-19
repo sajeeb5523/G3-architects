@@ -124,6 +124,45 @@ main > section{
     margin-bottom: 32px;
 }
 
+/* features section styles */
+#feature_section_title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.feature_card{
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature_card .feature_title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.features{
+    gap: 140px;
+}
+
+#experience_badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -85px;
+    margin-top: -130px;
+}
+#experience_year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature_architect img{
+    width: 100%;
+}
+
 /* fact styles */
 .facts_container{
     display: grid;
@@ -156,27 +195,78 @@ main > section{
     max-width: 540px;
 }
 
+/* sponsor style */
+.sponsor_info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center
+}
+
+.sponsor_companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor_companies img{
+    filter: grayscale(100%);
+}
+
+/* footer style */
+footer > p{
+    text-align: center;
+    padding: 39px 410px;
+    margin: 130px 240px 216px 240px;
+   
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav_links, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }    
-    .team_img_container{
+
+    .team_img_container, 
+    .facts_container, 
+    .sponsor_companies{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .facts_container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponsor_companies{
+        justify-items: center;
+        gap: 50px;
+    }
+
     .our_feature{
+        margin-left: 20px;
+    }
+    #experience_badge{
+        margin-top: 20px;
         margin-left: 20px;
     }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }    
     .our_feature{
         margin-left: 50px auto;
+    }
+    .sponsor_companies, 
+    .facts_container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+    #experience_badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
