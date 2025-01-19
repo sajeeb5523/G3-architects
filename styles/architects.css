@@ -214,8 +214,9 @@ main > section{
 /* footer style */
 footer > p{
     text-align: center;
+    font-size: 1.25rem;
     padding: 39px 410px;
-    margin: 130px 240px 216px 240px;
+    margin: 130px 240px 50px 240px;
    
 }
 /* responsive media query */
@@ -240,6 +241,7 @@ footer > p{
     .sponsor_companies{
         justify-items: center;
         gap: 50px;
+        margin-bottom: 30px;
     }
 
     .our_feature{
@@ -248,6 +250,10 @@ footer > p{
     #experience_badge{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    footer > p{
+        margin-left: -42px;
+
     }
 }
 
