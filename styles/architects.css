@@ -8,10 +8,6 @@
 }
 
 /* shared styles */
-.margin_lr{
-    margin: 0 240px 0 240px;
-}
-
 .display_flex{
     display: flex;
 }
@@ -211,14 +207,9 @@ main > section{
     filter: grayscale(100%);
 }
 
-/* footer style */
-footer > p{
-    text-align: center;
-    font-size: 1.25rem;
-    padding: 39px 410px;
-    margin: 130px 240px 50px 240px;
-   
-}
+
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, 
@@ -250,10 +241,6 @@ footer > p{
     #experience_badge{
         margin-top: 20px;
         margin-left: 20px;
-    }
-    footer > p{
-        margin-left: -42px;
-
     }
 }
 
